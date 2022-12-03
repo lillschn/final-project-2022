@@ -1,0 +1,58 @@
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Styling the "skip to main content" link to only be visible when in focus */
+a.skip {
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    z-index: 1;
+}
+
+a.skip:focus {
+    top:20px;
+    color: black;
+    text-decoration-style: solid;
+    border: solid 2px #000000;
+}
+
+header {
+    background-color: #F5F5F5;
+}
+
+/* style the nav elements */
+.nav_cont {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 30px 30px 30px 30px;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* style the images on both pages */
+div img {
+    width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Style the travel page with grid */
+
+.travel_cont {
+    display:grid;
+    grid-template-columns: 500px;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style the travel page with flex */
+.baking_cont {
+    display: flex;
+}
