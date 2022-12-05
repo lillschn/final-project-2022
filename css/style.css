@@ -23,6 +23,25 @@ header {
     background-color: #F5F5F5;
 }
 
+footer {
+    background-color: #F5F5F5;
+    margin-top: 20px;
+    text-align: right;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h2 {
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.about-me {
+    margin: 20px 20px 20px 20px;
+    text-align: center;
+}
+
 /* style the nav elements */
 .nav_cont {
     display: flex;
@@ -41,7 +60,6 @@ a {
 
 a:visited {
     color: black;
-
 }
 
 /* style active link */
@@ -53,6 +71,9 @@ a:visited {
 
 h1 {
     text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 25px;
+    margin-bottom: 15px;
 }
 
 /* style the images on both pages */
@@ -130,25 +151,70 @@ h1 {
         /* height: 70%; */
         /* flex-basis: 300px; */
     }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    h2 {
+        font-size:x-large;
+    }
+    
+    .about-me {
+        font-size: larger;
+        margin: 20px 35px 20px 35px;
+    }
     
 }
 
 
 /* Second Media Query */
 @media screen and (min-width: 1100px) {
-        /* style nav */
-        .nav_cont {
-            display: flex;
-            justify-content: flex-end;
-            padding: 25px;
-        }
-    
-        .nav_cont li {
-            font-size: 40px;
-        }
+    /* style nav */
+    .nav_cont {
+        display: flex;
+        justify-content: flex-end;
+        padding: 25px;
+    }
 
-        /* style baking */
-        .baking_cont img{
-            width: 20%;
-        }
+    .nav_cont li {
+        font-size: 40px;
+    }
+
+    /* style baking */
+    .baking_cont img{
+        width: 20%;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    h2 {
+        font-size:xx-large;
+    }
+    
+    .about-me {
+        font-size: x-large;
+        margin: 20px 50px 20px 50px;
+    }
+
+
+    /* style travel */
+
+    .travel_cont {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+
+    .travel_cont img:nth-child(3n) {
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+    .travel_cont img:last-child {
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+
+
 }
